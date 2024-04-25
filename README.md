@@ -12,16 +12,16 @@ This is a simple web-based "Guess the Number" game where the user tries to guess
 
 4. **Start Guessing**: The game will start automatically. You have 10 chances to guess the correct number.
 
-5. **Enter Your Guess**: Enter your guessed number in the input field and click the "Guess" button.
+5. **Enter Your Guess**: Enter your guessed number in the input field and click the "Check" button.
 
 6. **Receive Feedback**: After each guess:
    - If your guess is higher than the target number, you will see a message saying "Too high! Try again."
    - If your guess is lower than the target number, you will see a message saying "Too low! Try again."
-   - If your guess is correct, you will see a message saying '' Congratulations! You guessed the correct number ''
+   - If your guess is correct, you will see a message saying '' Congratulations! That is Correct ''
      
      <img src="https://github.com/Kenza-raki/Guess_The_Number_Game/assets/116951093/a03b4836-8cc5-49db-8be2-66b6c1bfa410" >
      
-   - If you run out of chances without guessing the correct number, you will see a message saying "You lost! The correct number was X ''
+   - If you run out of chances without guessing the correct number, you will see a message saying "You lost!  ''
      
    - <img src="https://github.com/Kenza-raki/Guess_The_Number_Game/assets/116951093/589026a9-747b-407f-b590-006ad048799d">
 
