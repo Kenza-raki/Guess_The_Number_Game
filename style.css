@@ -1,0 +1,156 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+.background-video {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  z-index: -1;
+}
+
+.background-video video {
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.wrapper {
+    position: fixed;
+    top: 50%; 
+    left: 50%; 
+    transform: translate(-50%, -50%); 
+    width: 80%; 
+    max-width: 400px; 
+    padding: 30px 40px;
+    border-radius: 10px;
+    border: 2px solid white;
+    background: transparent; 
+    backdrop-filter: blur(8px);
+    text-align: center;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+    animation: fadeIn 1s ease;
+    z-index: 1; 
+  }
+  
+  .shake-left-right {
+    animation: shake-left-right 0.8s linear both;
+  }
+  @keyframes shake-left-right {
+    0%, 100% {
+      transform: translate(-50%, -50%) rotate(0deg);
+    }
+    10%, 30%, 50%, 70%, 90% {
+      transform: translate(-50%, -50%) rotate(-5deg);
+    }
+    20%, 40%, 60%, 80% {
+      transform: translate(-50%, -50%) rotate(5deg);
+    }
+  }
+  
+.lose-gif {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto; 
+}
+
+.lost-message {
+  font-size: 32px; 
+  font-weight: bold; 
+  color: #DE0611; 
+  margin-top: 20px; 
+  border: 2px solid white; 
+  padding: 10px; 
+  border-radius: 10px;
+}
+
+  
+.wrapper header {
+  font-size: 24px;
+  font-weight: 600;
+  color: thistle;
+  margin-bottom: 20px;
+}
+.wrapper img.losing-gif {
+  display: block;
+  max-width: 100%;
+  margin: 0 auto;
+  margin-bottom: 20px;
+}
+
+.wrapper .lost-message {
+  font-size: 18px;
+  color: #DE0611;
+}
+
+.wrapper p {
+  color: thistle;
+}
+
+.input-field {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin: 25px 0;
+}
+
+.input-field input,
+.input-field button {
+  height: 50px;
+  width: calc(100% / 2 - 20px);
+  outline: none;
+  padding: 0 20px;
+  border-radius: 8px;
+  font-size: 18px;
+}
+
+.input-field input {
+  text-align: center;
+  color:red ;
+  width: 110px;
+  border: 1px solid #aaa;
+}
+
+input::-webkit-inner-spin-button,
+input::-webkit-outer-spin-button {
+  display: none;
+}
+
+.input-field input:disabled {
+  cursor: not-allowed;
+}
+
+.input-field button {
+  border: none;
+  background: slateblue;
+  color: #aaa;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.input-field button:active {
+  transform: scale(0.97);
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}

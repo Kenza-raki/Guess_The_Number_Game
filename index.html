@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Guess the Number Game</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <audio id="backgroundMusic" autoplay loop>
+    <source src="audio.mp3" type="audio/mpeg">
+  </audio>
+  
+  <audio id="correctSound">
+    <source src="win.mp3" type="audio/mpeg">
+  </audio>
+  
+  <audio id="wrongSound">
+    <source src="lost.mp3" type="audio/mpeg">
+  </audio>
+  
+  <div class="background-video">
+    <video autoplay muted loop>
+      <source src="b.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+    <div class="wrapper">
+      <header>Guess a number from 1 to 100</header>
+      <p class="guess"></p>
+      <div class="input-field">
+        <input type="number" />
+        <button>Check</button>
+      </div>
+      <p class="chances">You have <span>10</span> chances</p>
+    </div>
+  </div>
+  <script src="script.js" defer></script>
+</body>
+</html>
